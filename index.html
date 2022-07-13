@@ -9,11 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora de tu signo zodiacal.</h1>
-        <p>¿Cual es tu fecha de nacimiento?</p>
-        <form action="">
+        <h1>¿Quieres saber cúal es tu signo?</h1>
+        <p>¿Cúal es tu fecha de nacimiento?</p>
+        <form  class="container-form">
         <!-- Aqui se selecciona el día-->
-        <select name="day" id="day">
+        <select name="day" id="day" required>
+            <option disabled="" selected="" value="" >Día</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -47,7 +48,8 @@
             <option value="31">31</option>
         </select>
        <!-- Aqui se selecciona el mes -->
-        <select name="month" id="month">
+        <select name="month" id="month" required>
+            <option disabled="" selected="" value="" >Mes</option>
             <option value="enero">Enero</option>
             <option value="febrero">Febrero</option>
             <option value="marzo">Marzo</option>
@@ -62,7 +64,8 @@
             <option value="diciembre">Diciembre</option>
         </select>
         <!-- Aqui va el año de nacimiento -->
-        <select name="year" id="year">
+        <select name="year" id="year" required>
+            <option disabled="" selected="" value="" >Año</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>
@@ -85,8 +88,21 @@
             <option value="2003">2003</option>
             <option value="2002">2002</option>
         </select>
+        <br>
+                        <!-- <button type="submit" id="button" class="btn">Calcular</button> -->
+        <input id="button" class="buttom" value="Calcular!!" type="button" name="calcular">  
+
+
     </form>
+
     </div>
-    <script src="main.js"></script>
+  <footer class="footer">
+    <h3>Emmanuel Ojeda </h3>
+  </footer>
+
+
 </body>
+
+<script src="main.js"></script>
+
 </html>

@@ -2,3 +2,70 @@
     padding: 0;
     margin: 0;
 }
+/* Aqui estan los enlaces a google fonts y las variables globales
+font-family: 'Cormorant SC', serif;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Edu VIC WA NT Beginner', cursive;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap');
+:root{
+    --color-text:#fff;
+    --backgorund:#111;
+    --transparent:  rgba(0, 0, 0, 0.3);
+}
+body {
+    background: linear-gradient(130deg, #001c23 0, #001b27 5%, #001a29 10%, #00192c 15%, #00192e 20%, #00172f 25%, #001630 30%, #001530 35%, #001330 40%, #07122f 45%, #10102d 50%, #170e2b 55%, #1c0c28 60%, #200a26 65%, #240822 70%, #27061f 75%, #29051b 80%, #2b0417 85%, #2c0413 90%, #2d040e 95%, #2d0407 100%);  color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+
+}
+.container-form {
+    padding: 10px;
+}
+select {
+    background: var(--transparetn);
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    height: 30px;
+    font-size: 18px;
+    padding: 0px 5px;
+    margin-left: 15px;
+}
+option {
+    background:var(--transparent) ;
+
+}
+.buttom {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #2f3640;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+
+
+}
+.buttom:hover {
+    letter-spacing: 5px;
+}
+.footer {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
