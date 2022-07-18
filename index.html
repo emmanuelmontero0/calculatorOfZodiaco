@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora del Zodiaco</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="description.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>¿Quieres saber cúal es tu signo?</h1>
-        <p>¿Cúal es tu fecha de nacimiento?</p>
+        <p class="result-paragraph">¿Cúal es tu fecha de nacimiento?</p>
         <form  class="container-form">
-        <!-- Aqui se selecciona el día-->
+         <!-- Aqui se selecciona el día -->
         <select name="day" id="day" required>
             <option disabled="" selected="" value="" >Día</option>
             <option value="1">1</option>
@@ -89,20 +90,35 @@
             <option value="2002">2002</option>
         </select>
         <br>
-                        <!-- <button type="submit" id="button" class="btn">Calcular</button> -->
         <input id="button" class="buttom" value="Calcular!!" type="button" name="calcular">  
-
-
     </form>
 
+<!-- 
+==============================================
+    Aqui van los resultados de las funciones
+==============================================
+
+= 
+ -->
+    <div id="result" class="result" >
+
+        <div class="text-box">
+            <span id="resultText" class="result-name"></span>
+            <span id="resultElement" class="result-Element"></span>
+            <span id="resultParagraph" class="result-paragraph"></span>
+
+        </div>
+        <span id="resultImg" class="result-img"></span>
     </div>
+</div>
+  
   <footer class="footer">
-    <h3>Emmanuel Ojeda </h3>
+    <h3>Emmanuel Ojeda</h3>
   </footer>
 
 
 </body>
-
+<script type="text/javascript" src="description.js"></script>
 <script src="main.js"></script>
 
 </html>
