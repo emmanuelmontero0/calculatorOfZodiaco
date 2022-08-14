@@ -1,9 +1,9 @@
-function create(name, elemento, personalidad) {
+export function create(name, elemento, personalidad) {
     this.nombre = name,
     this.element = elemento,
     this.personality = personalidad
 };
-const zodiaco = [];
+export let zodiaco = [];
 /*
         Signos de fuego: Aries, Leo y Sagitario.
         Signos de tierra: Tauro, Virgo y Capricornio.
@@ -25,4 +25,4 @@ new create("Acuario", "Aire", "Se adaptan fácilmente, por lo cual pueden sentir
 //Signos de agua: Cáncer, Escorpio y Piscis.
 zodiaco.push(new create("Cancer", "Agua", "Son tenaces, intuitivos, empáticas y leales, los nacidos bajo el signo del zodiaco Cáncer son emocionales, sensibles, en ocasiones reservados y dan todo por proteger a su familia."), 
 new create("Escorpio", "Agua", "A los nacidos bajo el signo del zodiaco Agua no los puedes dejar con la duda, no se detendrán hasta conocer la verdad. Son asertivos, saben guardar secretos y son amigos leales."), 
-new create("Piscis", "Agua", "Su personalidad le es de gran ayuda para poder hacer amigos en cualquier lugar que visitan. Son intuitivos, amables, confiables, generosos y con un talento artístico."))
+new create("Piscis", "Agua", "Su personalidad le es de gran ayuda para poder hacer amigos en cualquier lugar que visitan. Son intuitivos, amables, confiables, generosos y con un talento artístico."));

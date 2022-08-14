@@ -1,3 +1,4 @@
+import { zodiaco, create } from "./description.js";
 /*
     ==============================================
         Aqui se reciben los datos de los select 
@@ -18,7 +19,6 @@ boton.addEventListener("click", calc);
 
 
 function writeBody(signo, boxInnert) {
-    console.log(`Tu signo es: ${signo}`);
     boxInnert.innerText = `Tu signo es: ${signo}`;
     imgResult.innerHTML = `<img src="img/${signo.toLowerCase()}.jpg" alt="imagen de ${signo}">`
 
